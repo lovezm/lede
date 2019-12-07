@@ -1,0 +1,169 @@
+
+
+/* 滚动槽 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.06);
+    -webkit-box-shadow: inset 0 0 5px rgba(245, 159, 159, 0.08);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.12);
+    -webkit-box-shadow: inset 0 0 10px rgba(248, 38, 38, 0.2);
+}
+
+
+.pull-right {
+    float: right;
+    margin-top: 0.5rem;
+}
+
+.pull-left {
+    float: left;
+}
+body{
+    opacity: 0.9;
+    background-image: url(https://9yo.cc/bg.php);
+}
+
+  
+
+    body p {
+        line-height: 24px
+    }
+    
+
+
+    
+    body a {
+        -webkit-transition: all .35s;
+        transition: all .35s;
+        color: #ff4e6a;
+        text-decoration: none;
+        position: relative;
+        word-wrap: break-word
+    }
+    
+    body a:focus,body a:hover {
+        color: #ff4e6a
+    }
+    
+    body a::after {
+        -webkit-transition: width .35s;
+        transition: width .35s;
+        content: "";
+        right: 0;
+        width: 0;
+        bottom: -2px;
+        position: absolute;
+        border-bottom: 1px solid
+    }
+    
+    body a:hover::after {
+        left: 0;
+        width: 100%
+    }
+    
+  
+   
+    
+    body h1 {
+        font-size: 2.2em
+    }
+    
+    body .panel-title {
+        font-size: 1.5em;
+        position: relative;
+        padding-bottom: 10px
+    }
+    
+    body .panel-title:before {
+        content: "";
+        width: calc(100% + 40px);
+        border-bottom: 1px solid #eee;
+        position: absolute;
+        bottom: -1px;
+        left: -20px
+    }
+    
+    body .panel-title:after {
+        transition: all .35s;
+        content: "";
+        position: absolute;
+        background: rgba(75, 137, 230, 0.85);
+        width: 1em;
+        height: 5px;
+        bottom: -3px;
+        left: 0;
+        border-radius: 6px;
+        box-shadow: 0 2px 12px rgba(124, 184, 240, 0.85)
+    }
+    
+    body .panel-title:hover:after {
+        width: 2em
+    }
+    
+   
+    
+    
+   
+    
+    body h1,body h2,body h3,body h4,body h5,body h6 .panel-title{
+        color: #111;
+        margin: 20px 0
+    }
+    
+  
+    body h4:before,body h5:before,body h6:before {
+        display: inline-block;
+        width: 1em;
+        content: '#';
+        color: #ff4e6a
+    }
+    
+    body h1 {
+        font-size: 2.2em
+    }
+    
+    body h2 {
+        font-size: 1.5em;
+        position: relative;
+        padding-bottom: 10px
+    }
+    
+    body h2:before {
+        content: "";
+        width: calc(100% + 40px);
+        border-bottom: 1px solid #eee;
+        position: absolute;
+        bottom: -1px;
+        left: -20px
+    }
+    
+    body h2:after {
+        transition: all .35s;
+        content: "";
+        position: absolute;
+        background: rgba(255,78,106,.85);
+        width: 1em;
+        height: 5px;
+        bottom: -3px;
+        left: 0;
+        border-radius: 6px;
+        box-shadow: 0 2px 12px rgba(255,78,106,.85)
+    }
+    
+    body h2:hover:after {
+        width: 2em
+    }
+    
+    
+    body canvas,body iframe,body img,body select,body svg,body textarea,body video {
+        width: auto;
+        max-width: 100%
+    }
